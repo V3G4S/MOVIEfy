@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - MOVIEfy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #101010;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e50914;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-bar img {
+    width: 20px;
+    height: 20px;
+}
+
+.user-profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+.player {
+    width: 300px;
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.player img.album-cover {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.song-info {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.song-info h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.controls button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.play {
+    font-size: 24px;
+}
+
+.progress-bar {
+    width: 100%;
+}
+
+.progress-bar input[type="range"] {
+    width: 100%;
+}
+
+.music-sections {
+    margin-left: 20px;
+    width: 100%;
+}
+
+.music-sections section {
+    margin-bottom: 40px;
+}
+
+.music-sections h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.music-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.music-grid div {
+    text-align: center;
+}
+
+.music-grid img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.music-grid p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+</style>
+<body>
+    <header>
+        <div class="logo">MOVIEfy</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyWw0c35WoDdPJ63lIQbRVbwk6kC0qImMRPA&s" alt="Search"></button>
+        </div>
+        <div class="user-profile">
+            <img src="https://static-00.iconduck.com/assets.00/user-icon-2046x2048-9pwm22pp.png" alt="User">
+        </div>
+    </header>
+
+    <main>
+        <div class="player">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/g_moana_09_17699_064f5500_2f9ff275.jpeg?region=285,0,730,730" alt="Moana logo" class="album-cover">
+            <div class="song-info">
+                <h3>Sou Moana</h3>
+                <div class="controls">
+                    <button>&#9664;</button>
+                    <button class="play">&#10074;&#10074;</button>
+                    <button>&#9654;</button>
+                </div>
+                <div class="progress-bar">
+                    <input type="range" value="50">
+                </div>
+            </div>
+        </div>
+
+        <div class="music-sections">
+            <section>
+                <h2>Novas músicas adicionadas</h2>
+                <div class="music-grid">
+                    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj_tgor3iIIuSiqlQLxJA5FUUk6635TXeu-A&s" alt="Hino de Hogwarts"><p>Hino de Hogwarts</p></div>
+                    <div><img src="https://www.oficinadanet.com.br/imagens/post/55307/jurassic-park-completa-31-anos-hoje-veja-como-esta-o-elenco-original-e-onde-assistir.jpg" alt="Jurassic Park"><p>Jurassic Park</p></div>
+                    <div><img src="https://br.web.img2.acsta.net/pictures/210/461/21046189_20131002174340886.jpg" alt="Minha Intuição"><p>Minha Intuição</p></div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Álbuns</h2>
+                <div class="music-grid">
+                    <div><img src="https://play-lh.googleusercontent.com/mD_B8KzUVh3ENwq79T_EilMzyK-Zg6srO4tBbX3ilzTE3XglLnj5NGJkYg5RmF0TbS3G" alt="Star Wars"><p>Star Wars</p></div>
+                    <div><img src="https://m.media-amazon.com/images/S/pv-target-images/54fcb6e3ca207573c673f9ac550dc265caeb637dcc7218895bffded007692102.jpg" alt="Sing"><p>Sing</p></div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Playlist's</h2>
+                <div class="music-grid">
+                    <div><img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84e793bc21896fea76d410761a" alt="Curtidas"><p>Curtidas</p></div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIEfy - Login e Cadastro</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    color: red;
+    font-size: 3em;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.login-box, .register-box {
+    background-color: #111;
+    padding: 30px;
+    width: 45%;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    font-size: 1em;
+}
+
+button {
+    padding: 15px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn-social {
+    width: 30%;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.btn-social:hover {
+    background-color: #555;
+}
+
+.fb { background-color: #3b5998; }
+.google { background-color: #db4437; }
+.insta { background-color: #e4405f; }
+
+.forgot-password {
+    color: gray;
+    font-size: 0.9em;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.forgot-password:hover {
+    color: #fff;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1 class="title">MOVIEfy</h1>
+        <div class="form-container">
+            <div class="login-box">
+                <h2>Login</h2>
+                <form>
+                    <input type="text" placeholder="email ou usuário" required>
+                    <input type="password" placeholder="senha" required>
+                    <a href="home.html"><button type="submit" class="btn-login">ENTRAR</button></a>
+                    <div class="social-login">
+                        <button class="btn-social fb">Facebook</button>
+                        <button class="btn-social google">Google</button>
+                        <button class="btn-social insta">Instagram</button>
+                    </div>
+                    <a href="#" class="forgot-password">Esqueceu sua senha?</a>
+                </form>
+            </div>
+            <div class="register-box">
+                <h2>Cadastro</h2>
+                <form>
+                    <input type="text" placeholder="usuário" required>
+                    <input type="email" placeholder="email" required>
+                    <input type="password" placeholder="senha" required>
+                    <a href="home.html"><button type="submit" class="btn-register">CRIAR</button></a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
